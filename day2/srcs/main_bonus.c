@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   main_bonus.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvpee <mvpee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/02 17:29:50 by mvpee             #+#    #+#             */
-/*   Updated: 2023/12/02 19:28:10 by mvpee            ###   ########.fr       */
+/*   Updated: 2023/12/02 19:27:47 by mvpee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,8 +89,7 @@ int main(void)
         }
         ft_free_split(split);
         ft_printf("red: %d\nblue: %d\ngreen: %d\n", game.red, game.blue, game.green);
-        if(game.red <= 12 && game.blue <= 14 && game.green <= 13)
-            total += game.id;
+        total += game.red*game.blue*game.green;
     }
     ft_printf("total : %d\n", total);
     return (0);
