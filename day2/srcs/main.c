@@ -6,7 +6,7 @@
 /*   By: mvpee <mvpee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/02 17:29:50 by mvpee             #+#    #+#             */
-/*   Updated: 2023/12/02 19:28:10 by mvpee            ###   ########.fr       */
+/*   Updated: 2023/12/02 19:29:55 by mvpee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,6 @@ static void count_color(char *str, t_game *game)
 {
     int i = 0;
     int temp;
-    int color;
     while(str[i])
     {
         temp = 0;
