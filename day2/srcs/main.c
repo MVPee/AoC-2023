@@ -6,7 +6,7 @@
 /*   By: mvpee <mvpee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/02 17:29:50 by mvpee             #+#    #+#             */
-/*   Updated: 2023/12/02 19:15:59 by mvpee            ###   ########.fr       */
+/*   Updated: 2023/12/02 19:17:24 by mvpee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,12 +70,13 @@ int main(void)
     int fd = open("rscs/input.txt", O_RDONLY);
     int total = 0;
     char *line;
+    int i;
 
     while((line = get_next_line(fd)))
     {
         init_game(&game);
         char **split = ft_split_str(line, ";:");
-        int i;
+        
         free(line);
 
         game.id = id_game(split[0]);
